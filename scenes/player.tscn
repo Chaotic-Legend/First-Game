@@ -1,7 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://dqnaqj8yb6hwd"]
+[gd_scene format=3 uid="uid://dqnaqj8yb6hwd"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_ofpvf"]
+[ext_resource type="Script" uid="uid://dhojb01i6t155" path="res://scripts/player.gd" id="1_ofpvf"]
 [ext_resource type="Texture2D" uid="uid://b8cmjj8vq3r8d" path="res://assets/sprites/knight.png" id="1_p3dy5"]
+[ext_resource type="AudioStream" uid="uid://b55xtmvwkoslc" path="res://assets/sounds/jump.wav" id="3_dqkch"]
+[ext_resource type="AudioStream" uid="uid://d3ga5iqgco704" path="res://assets/sounds/hurt.wav" id="4_qlg0r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eq0sc"]
 atlas = ExtResource("1_p3dy5")
@@ -171,17 +173,28 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bvcm0"]
 radius = 5.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1647220623]
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_ofpvf")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Visuals" type="Node2D" parent="." unique_id=452043752]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visuals" unique_id=1071118351]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_81gkq")
 animation = &"jump"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1394805958]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_bvcm0")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=552069430]
+stream = ExtResource("3_dqkch")
+bus = &"SFX"
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=1133565862]
+stream = ExtResource("4_qlg0r")
+volume_db = 8.0
+bus = &"SFX"

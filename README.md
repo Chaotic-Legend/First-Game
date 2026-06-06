@@ -1,4 +1,4 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.3-blue?style=plastic&logo=godotengine)](https://godotengine.org/) ![GitHub top language](https://img.shields.io/github/languages/top/Chaotic-Legend/2D-Movement-Tutorial?logo=godotengine)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.3-blue?style=plastic&logo=godotengine)](https://godotengine.org/) ![GitHub top language](https://img.shields.io/github/languages/top/Chaotic-Legend/First-Game?logo=godotengine)
 
 # First Game | Project Touchstone #
 [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0&t=443s) by [Brackeys](https://www.youtube.com/brackeys) ([Discord](https://discord.gg/brackeys))
@@ -138,6 +138,6 @@ This task is a realistic and representative assignment for a junior-level develo
 
 16. There is background music that plays and loops when the game starts.
 - Run the main scene and observe that the background music begins playing and loops at the end of the music audio.
-- The task prompt requires looping background music that starts playing when the game begins.
+- The task prompt requires implementing looping background music that automatically starts when the game begins.
 <br>
-Godot - https://feather.openai.com/tasks/94fe55d0-d50b-4b60-a6f9-eb5cd5c3386a/stage/prompt_creation - Awaiting response.
+Godot - Full Vertical Slice (Game Prototype) - Finished prompt creation.
