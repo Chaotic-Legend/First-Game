@@ -283,12 +283,15 @@ position = Vector2(34, 37)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1771619519]
 position = Vector2(0, -7)
 zoom = Vector2(4, 4)
+process_callback = 0
 limit_bottom = 120
 limit_smoothed = true
 position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="Killzone" parent="." unique_id=275488587 instance=ExtResource("5_x8euu")]
-position = Vector2(74, 141)
+position = Vector2(75, 145)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=142834998]
 shape = SubResource("WorldBoundaryShape2D_cn5tm")
@@ -326,9 +329,11 @@ position = Vector2(584, -108)
 
 [node name="Platform" parent="Platforms" unique_id=1316749897 instance=ExtResource("3_cmfc3")]
 position = Vector2(32, 9)
+metadata/_edit_lock_ = true
 
 [node name="Platform2" parent="Platforms" unique_id=130039627 instance=ExtResource("3_cmfc3")]
 position = Vector2(370, 52)
+metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Platform2" unique_id=434090832]
 libraries/ = SubResource("AnimationLibrary_xuk5v")

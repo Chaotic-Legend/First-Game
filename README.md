@@ -50,7 +50,7 @@ Task from scratch
 
 <ins> How long would you anticipate an 'Employee' to complete this task? (in hours) </ins>
 <br>
-3
+4
 
 ### **Starting state** ###
 Please describe and include below any information about the starting state of this project:
